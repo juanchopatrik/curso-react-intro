@@ -22,7 +22,7 @@ function AppUI({
     <>
       <TodoCounter
         completed={completedTodos}
-        total={totalTodos} 
+        total={totalTodos}
       />
       <TodoSearch
         searchValue={searchValue}
@@ -37,7 +37,7 @@ function AppUI({
             <TodosLoading />
           </>
         )}
-        {error && <TodosError/>}
+        {error && <TodosError />}
         {(!loading && searchedTodos.length === 0) && <EmptyTodos />}
 
         {searchedTodos.map(todo => (
@@ -50,7 +50,7 @@ function AppUI({
           />
         ))}
       </TodoList>
-      
+
       <CreateTodoButton />
     </>
   );
